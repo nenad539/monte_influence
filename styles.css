@@ -1677,3 +1677,89 @@ footer::before {
       padding: 2rem;
   }
 }
+/* Mobile First Approach */
+@media (max-width: 768px) {
+  /* Header/Navbar */
+  body{
+    width: 100%;
+  }
+  .header {
+    padding: 1rem 2%;
+  }
+  
+  .logo img {
+    width: 120px; /* Smaller logo */
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-cologir);
+    transition: .3s ease;
+  }
+
+  #check:checked ~ .navbar {
+    left: 0;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  /* Hero Section */
+  .home {
+    padding: 10rem 4% 2rem;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about-content {
+    padding-top: 2rem;
+  }
+
+  /* Services */
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact Form */
+  .contact form .input-box {
+    flex-direction: column;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+  /* Prevents layout shift */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Minimum touch target size */
+a, button, input[type="submit"] {
+  min-width: 44px;
+  min-height: 44px;
+}
+}
