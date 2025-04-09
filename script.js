@@ -125,7 +125,7 @@ function initCalculator() {
 
     // Tourism industry average conversion rates
     const CONVERSION_RATE = 0.03; // 3% conversion rate
-    const AVERAGE_BOOKING_VALUE = 2500; // $2,500 per booking
+    const AVERAGE_BOOKING_VALUE = 550; // $550 per booking
     const MIN_ROAS = 3.5;
     const MAX_ROAS = 5.2;
 
@@ -249,11 +249,3 @@ document.querySelectorAll('.btn-luxury').forEach(button => {
     });
 });
 
-// ===== CHAT BUBBLE =====
-const chatToggle = document.querySelector('.chat-toggle');
-if (chatToggle) {
-    chatToggle.addEventListener('click', () => {
-        // In a real implementation, connect to your chat service here
-        alert("Welcome to GrowthSMMA! How can we help grow your tourism business today?");
-    });
-}
