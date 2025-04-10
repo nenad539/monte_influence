@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontaktirajte nas</title>
+    <title data-en="Contact us" data-sr="Kontaktirajte nas"></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="contact.css">
@@ -20,36 +20,43 @@
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
+                <div class="language-dropdown">
+                    <button class="language-btn">EN &#9660;<i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="sr">Srpski</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     <!-- Contact Main Content -->
     <main class="contact-main">
         <div class="container">
-            <h1 data-animate>Zajedno izgradimo vas biznis</h1>
-            <p class="subtitle" data-animate="fade" data-animate-delay="0.2s">Odaberite zeljeni nacin kontaktiranja</p>
+            <h1 data-animate data-en="Grow your business together" data-sr="Zajedno izgradimo vas biznis"></h1>
+            <p class="subtitle" data-animate="fade" data-animate-delay="0.2s" data-en="Chose your prefered contact method" data-sr="Odaberite zeljeni nacin kontaktiranja"></p>
             
            
             <div class="contact-grid">
                 <div class="contact-card calendly-card" data-animate="slide-up" data-animate-delay="0.1s">
                     <i class="fas fa-suitcase"></i>
-                    <h2>Besplatna Konsultacija</h2>
-                    <p>Zakazite razgovor od 30 minuta sa nasim marketing specijalistom</p>
-                    <a href="#" class="btn">Zakazite Odmah</a>
+                    <h2 data-en="Free Consultation" data-sr="Besplatna Konsultacija"></h2>
+                    <p data-en="Book a 30 minute call with our marketing expert" data-sr="Zakazite razgovor od 30 minuta sa nasim marketing specijalistom"></p>
+                    <a href="calendly.html" class="btn" data-en="Book Now" data-sr="Zakazite Odmah"></a>
                 </div>
                 
                 <div class="contact-card" data-animate="slide-up" data-animate-delay="0.2s">
                     <i class="fas fa-headset"></i>
-                    <h2>Podrska</h2>
-                    <p>Postojeci klijenti mogu dobiti brzi odgovor na njihov problem</p>
-                    <a href="mailto:support@yoursmma.com" class="btn btn-secondary">Podrska</a>
+                    <h2 data-en="Support" data-sr="Podrska"></h2>
+                    <p data-en="Existing clients can get instant replies to their problems" data-sr="Postojeci klijenti mogu dobiti brzi odgovor na njihov problem"></p>
+                    <a href="mailto:nenadandric5390@gmail.com" class="btn btn-secondary" data-en="Support" data-sr="Podrska"></a>
                 </div>
                 
                 <div class="contact-card whatsapp-card" data-animate="slide-up" data-animate-delay="0.3s">
                     <i class="fas fa-phone-alt"></i>
-                    <h2>Hitni poziv</h2>
-                    <p>Za uzurbani ili poziv u zadnjem trenutku</p>
-                    <a href="https://wa.me/1234567890" class="btn">Pozovite odmah</a>
+                    <h2 data-en="Urgent call" data-sr="Hitni poziv"></h2>
+                    <p data-en="For urgent or last-minute calls" data-sr="Za uzurbani ili poziv u zadnjem trenutku"></p>
+                    <a href="https://wa.me/+382068392397" class="btn" data-en="Call now" data-sr="Pozovite odmah"></a>
                 </div>
             </div>
     <!-- Footer -->
@@ -58,7 +65,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>MonteInfluence</h3>
-                    <p>Agencija za razvoj vase Turisticke Agencije</p>
+                    <p data-en="Premium Marketing for Travel Agencies" data-sr="Premium marketing za Turisticke agencije"></p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -66,11 +73,11 @@
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Linkovi</h3>
+                    <h3 data-en="Quick Links" data-sr="Linkovi"></h3>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#services">Usluge</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="index.html#services" data-en="Services" data-sr="Usluge"></a></li>
+                        <li><a href="contact.html" data-en="Contact" data-sr="Kontakt"></a></li>
                     </ul>
                 </div>
             </div>

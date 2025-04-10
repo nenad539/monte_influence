@@ -248,4 +248,45 @@ document.querySelectorAll('.btn-luxury').forEach(button => {
         button.style.setProperty('--mouse-y', `${y}px`);
     });
 });
+// DELETE ALL existing language code and REPLACE with this:
 
+// Track current language
+let currentLang = localStorage.getItem('lang') || 'en';
+
+// Update ALL language displays
+function updateLanguageDisplay() {
+  // 1. Update dropdown button text
+  document.querySelector('.language-btn').innerHTML = 
+    currentLang === 'en' 
+      ? 'EN <i class="bx bx-chevron-down"></i>' 
+      : 'SR <i class="bx bx-chevron-down"></i>';
+  
+  // 2. Update all translatable text
+  document.querySelectorAll('[data-en], [data-sr]').forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+  
+  // 3. Force Calendly text update
+  if (window.location.pathname.includes('calendly')) {
+    document.querySelector('h1').textContent = 
+      currentLang === 'en' ? 'Schedule Meeting' : 'Zakažite Sastanak';
+    document.querySelector('p').textContent = 
+      currentLang === 'en' ? 'Choose time' : 'Izaberite vreme';
+  }
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  // Set up click handlers
+  document.querySelectorAll('[data-lang]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      currentLang = e.target.getAttribute('data-lang');
+      localStorage.setItem('lang', currentLang);
+      updateLanguageDisplay();
+    });
+  });
+  
+  // First load
+  updateLanguageDisplay();
+});

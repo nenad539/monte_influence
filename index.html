@@ -39,13 +39,21 @@
                 <a href="index.html" class="logo">Monte<span>Influence</span></a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#services">Usluge</a></li>
-                    <li><a href="#why-choose-us">Zasto mi?</a></li>
-                    <li><a href="contact.html" class="contact-nav-btn">Kontakt</a></li>
+                    <li><a href="#services" data-en="Services" data-sr="Usluge">Usluge</a></li>
+                    <li><a href="#why-choose-us" data-en="Why us" data-sr="Zasto mi">Zasto mi?</a></li>
+                    <li><a href="contact.html" class="contact-nav-btn" data-en="Contact" data-sr="Kontakt">Kontakt</a></li>
                 </ul>
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
+                <!-- Language Dropdown -->
+        <div class="language-dropdown" style="--i:4;">
+            <button class="language-btn">EN <i class='bx bx-chevron-down'></i></button>
+            <div class="dropdown-content">
+                <a href="#" data-lang="en">English</a>
+                <a href="#" data-lang="sr">Srpski</a>
+            </div>
+        </div>
             </nav>
         </div>
     </header>
@@ -55,10 +63,10 @@
     <section class="hero" data-animate>
         <div id="particles-js"></div>
         <div class="container">
-            <h1 class="luxury-headline">Unaprijedite svoju agenciju za 6 mjeseci</h1>
+            <h1 class="luxury-headline" data-sr="Unaprijedite svoju agenciju za 6 mjeseci" data-en="10x your business in 6 months"></h1>
             <div class="hero-buttons">
                 <a href="calendly.html" class="btn btn-luxury">
-                    <span class="btn-text">Zakazite poziv</span>
+                    <span class="btn-text" data-en="Book a call" data-sr="Zakazite poziv"></span>
                     <span class="btn-icon">
                         <i class="fas fa-arrow-right"></i>
                     </span>
@@ -73,9 +81,8 @@
     <!-- Destinations Showcase -->
 <section class="destinations-section">
     <div class="container">
-        <h2 data-animate>Istaknute lokacije</h2>
-        <p class="section-subtitle" data-animate="fade" data-animate-delay="0.2s">Rezultati koje smo obezbijedili nasim klijentima</p>
-        
+        <h2 data-animate data-en="Hot locations" data-sr="Istaknute lokacije"></h2>
+       
         <div class="destinations-grid">
             <!-- Destination 1 -->
             <div class="destination-card" data-animate="slide-up" data-animate-delay="0.3s">
@@ -84,18 +91,18 @@
                     <div class="destination-badge">+480% ROAS</div>
                 </div>
                 <div class="destination-content">
-                    <h3>Durmitor Turisticki Paket</h3>
+                    <h3 data-en="Durmitor Travel Tour" data-sr="Durmitor Turisticki Paket"></h3>
                     <div class="destination-stats">
                         <div class="stat">
                             <i class="fas fa-calendar"></i>
-                            <span>Vrhunac sezone</span>
+                            <span data-en="Peak seson" data-sr="Vrhunac sezone"></span>
                         </div>
                         <div class="stat">
                             <i class="fas fa-dollar-sign"></i>
-                            <span>$42k Zarada</span>
+                            <span data-en="$42k Revenue" data-sr="$42k Zarada"></span>
                         </div>
                     </div>
-                    <a href="https://www.durmitornp.com/" target="_blank" class="btn btn-small" >Pretrazi →</a>
+                    <a href="https://www.durmitornp.com/" target="_blank" class="btn btn-small" data-en="Learn more  →" data-sr="Pretrazi →"></a>
                 </div>
             </div>
             
@@ -103,21 +110,21 @@
             <div class="destination-card" data-animate="slide-up" data-animate-delay="0.4s">
                 <div class="destination-image">
                     <img src="assets/tivat.jpeg" alt="Safari Campaign">
-                    <div class="destination-badge">72 Zakazana Putovanja</div>
+                    <div class="destination-badge" data-en="72 Booked Tours" data-sr="72 Zakazana Putovanja"></div>
                 </div>
                 <div class="destination-content">
-                    <h3>Luksuzna putovnja Tivtom</h3>
+                    <h3 data-en="Luxury Tivat Tours" data-sr="Luksuzna putovnja Tivtom"></h3>
                     <div class="destination-stats">
                         <div class="stat">
                             <i class="fas fa-users"></i>
-                            <span>22-45 Godina</span>
+                            <span data-en="22-45 age group" data-sr="22-45 Godina"></span>
                         </div>
                         <div class="stat">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Evropski Fokus</span>
+                            <span data-en="Europe Focus" data-sr="Evropski Fokus"></span>
                         </div>
                     </div>
-                    <a href="https://tivat.travel/" target="_blank" class="btn btn-small">Pretrazi →</a>
+                    <a href="https://tivat.travel/" target="_blank" class="btn btn-small" data-en="Learn more →" data-sr="Pretrazi →"></a>
                 </div>
             </div>
             
@@ -125,21 +132,21 @@
             <div class="destination-card" data-animate="slide-up" data-animate-delay="0.5s">
                 <div class="destination-image">
                     <img src="assets/europe-results.jpg" alt="Europe Campaign">
-                    <div class="destination-badge">3.5X Konverzija</div>
+                    <div class="destination-badge" data-en="3.5X Conversion Rate" data-sr="3.5X Konverzija"></div>
                 </div>
                 <div class="destination-content">
-                    <h3>Evropska Rijecna Krstarenja</h3>
+                    <h3 data-en="European River Cruises" data-sr="Evropska Rijecna Krstarenja"></h3>
                     <div class="destination-stats">
                         <div class="stat">
                             <i class="fas fa-umbrella-beach"></i>
-                            <span>Letnji Odmori</span>
+                            <span data-en="Summer Campaign" data-sr="Letnji Odmori"></span>
                         </div>
                         <div class="stat">
                             <i class="fas fa-percentage"></i>
-                            <span>63% Ponavljanja</span>
+                            <span data-en="63% Repeat Rate" data-sr="63% Ponavljanja"></span>
                         </div>
                     </div>
-                    <a href="https://www.avalonwaterways.com/europe-rivers-map/" target="_blank" class="btn btn-small">Pretrazi →</a>
+                    <a href="https://www.avalonwaterways.com/europe-rivers-map/" target="_blank" class="btn btn-small" data-en="Learn more →" data-sr="Pretrazi →"></a>
                 </div>
             </div>
         </div>
@@ -148,27 +155,27 @@
     <!-- Services -->
     <section class="services" id="services">
         <div class="container">
-            <h2 data-animate>Nase Marketinske Usluge</h2>
+            <h2 data-animate data-en="Our Marketing Offers" data-sr="Nase Marketinske Usluge"></h2>
              
             <div class="services-grid">
                 <div class="service-card" data-animate="zoom" data-animate-delay="0.3s">
                     <i class="fas fa-plane-departure"></i>
-                    <h3>Facebook/Instagram Reklame</h3>
-                    <p>Visoko-konvertujuce turisticke reklame koje pokazuju vase destinacije zagarantovanim kupcima</p>
+                    <h3 data-en="Facebook/Instagram Ads" data-sr="Facebook/Instagram Reklame"></h3>
+                    <p data-en="High-conversion ads that display your offer to a high-paying customer" data-sr="Visoko-konvertujuce turisticke reklame koje pokazuju vase destinacije zagarantovanim kupcima"> </p>
                     
                 </div>
                 
                 <div class="service-card" data-animate="zoom" data-animate-delay="0.4s">
                     <i class="fas fa-search-location"></i>
-                    <h3>Google Reklame</h3>
-                    <p>Dobijanje kupaca koji traze vase usluge strateski ustanovljenim marketingom</p>
+                    <h3 data-en="Google Ads" data-sr="Google Reklame"></h3>
+                    <p data-en="Getting high-ticket customers with our proven marketing strategies" data-sr="Dobijanje kupaca koji traze vase usluge strateski ustanovljenim marketingom"></p>
                    
                 </div>
                 
                 <div class="service-card" data-animate="zoom" data-animate-delay="0.5s">
                     <i class="fas fa-mail-bulk"></i>
-                    <h3>Email Marketing</h3>
-                    <p>Konvertovanje proslih kupaca u nove aktivne kupce pomocu automatiziranih email sistema</p>
+                    <h3 >Email Marketing</h3>
+                    <p data-en="Converting previous customers into paying ones using our automated email system" date-sr="Konvertovanje proslih kupaca u nove aktivne kupce pomocu automatiziranih email sistema"></p>
                     
                 </div>
             </div>
@@ -186,8 +193,8 @@
         </div>
         
         <div class="container">
-            <h2 data-animate="fade">Zasto putnicke agencije biraju nas</h2>
-            <p class="subtitle" data-animate="fade" data-animate-delay="0.2s">Specijalizovana struka za putnicke agencije</p>
+            <h2 data-animate="fade" data-en="Why Travel Agencies chose us" data-sr="Zasto putnicke agencije biraju nas"></h2>
+            <p class="subtitle" data-animate="fade" data-animate-delay="0.2s" data-en="Specialized in travel agencies" data-sr="Specijalizovana struka za putnicke agencije"></p>
             
             <div class="benefits-grid">
                 <div class="benefit-card" data-animate="slide-up" data-animate-delay="0.3s">
@@ -196,8 +203,8 @@
                     </div>
                     <div class="card-content">
                         <i class="fas fa-map-marked-alt"></i>
-                        <h3>Pracenje ucestalnih putovanja</h3>
-                        <p>Mi pratimo zakazivanja, ne samo klikove - sa posebnim sistemom za konverziju putovanja i putnickih paketa</p>
+                        <h3 data-en="Hot Bookings Tracking" data-sr="Pracenje ucestalnih putovanja"></h3>
+                        <p data-en="We track bookings, not just clicks - with our specialized high-ticket conversion system" data-sr="Mi pratimo zakazivanja, ne samo klikove - sa posebnim sistemom za konverziju putovanja i putnickih paketa"></p>
                     </div>
                 </div>
                 
@@ -207,8 +214,8 @@
                     </div>
                     <div class="card-content">
                         <i class="fas fa-users"></i>
-                        <h3>Dokazani high-ticket Turisti</h3>
-                        <p>Dobite listu nasih specijalnih turista koji konvertuju 3 puta bolje od standardnih</p>
+                        <h3 data-en="Proven high-ticket Customers" data-sr="Dokazani high-ticket Kupci"></h3>
+                        <p data-en="Get a list of our special customers who convert 3x better than normal" data-sr="Dobite listu nasih specijalnih turista koji konvertuju 3 puta bolje od standardnih"></p>
                     </div>
                 </div>
                 
@@ -218,8 +225,8 @@
                     </div>
                     <div class="card-content">
                         <i class="fas fa-calendar-alt"></i>
-                        <h3>Specijalisti za Turisticke Sezone</h3>
-                        <p>Mijenjamo i prilagodnjavamo se turistickim sezonama</p>
+                        <h3 data-en="Specialized for Hot Sesons" data-sr="Specijalisti za Turisticke Sezone"></h3>
+                        <p data-en="We adapt to hot tourist sesons" data-sr="Mijenjamo i prilagodnjavamo se turistickim sezonama"></p>
                     </div>
                 </div>
             </div>
@@ -231,13 +238,13 @@
     <div class="container">
         <div class="calculator-card" data-animate="fade">
             <div class="calculator-header">
-                <h2>ROI Kalkulator</h2>
-                <p>Procijenite porast vaseg biznisa uz nase strategije</p>
+                <h2 data-en="ROI Calculator" data-sr="ROI Kalkulator"></h2>
+                <p data-en="Estimate your business growth with our strategies" data-sr="Procijenite porast vaseg biznisa uz nase strategije"></p>
             </div>
             
             <div class="calculator-body">
                 <div class="calculator-input">
-                    <label for="monthly-budget">Mjesecni reklamni budzet ($):</label>
+                    <label for="monthly-budget" data-en="Monthly AdSpend  ($):" data-sr="Mjesecni reklamni budzet ($):"></label>
                     <input type="range" id="monthly-budget" min="1000" max="20000" value="5000" step="500">
                     <div class="range-value">$<span id="budget-value">5,000</span></div>
                 </div>
@@ -246,7 +253,7 @@
                     <div class="result-card">
                         <i class="fas fa-calendar-check"></i>
                         <div>
-                            <h4>Procijenjena Zakazivanja</h4>
+                            <h4 data-en="Estimated Bookings" data-sr="Procijenjena Zakazivanja"></h4>
                             <p class="result-value" id="bookings-result">42-68</p>
                         </div>
                     </div>
@@ -254,7 +261,7 @@
                     <div class="result-card">
                         <i class="fas fa-dollar-sign"></i>
                         <div>
-                            <h4>Potencijalni Prihod</h4>
+                            <h4 data-en="Potential Revenue" data-sr="Potencijalni Prihod"></h4>
                             <p class="result-value" id="revenue-result">$126,000</p>
                         </div>
                     </div>
@@ -262,8 +269,8 @@
                     <div class="result-card">
                         <i class="fas fa-chart-line"></i>
                         <div>
-                            <h4>Ocekivani ROAS</h4>
-                            <p class="result-value" id="roas-result">3.5-5.2X</p>
+                            <h4 data-en="Expected ROAS" data-sr="Ocekivani ROAS"></h4>
+                            <p class="result-value" id="roas-result">3.2-4.3</p>
                         </div>
                     </div>
                 </div>
@@ -278,10 +285,10 @@
     <section class="cta" data-animate="fade">
         <div class="container">
             <div class="cta-content">
-                <h2>Spremni da zakazete jos Turista?</h2>
-                <p class="subtitle">Nasi klijenti u prosjeku dobiju 3,5 puta od njihovog reklamnog troska u 90 dana</p>
+                <h2 data-en="Ready to book more tours?" data-sr="Spremni da zakazete jos putovanja?"></h2>
+                <p class="subtitle" data-en="On average our clients get 3,5x of their adspend within 90 days" data-sr="Nasi klijenti u prosjeku dobiju 3,5 puta od njihovog reklamnog troska u 90 dana"></p>
                 <a href="calendly.html" class="btn btn-cta-pulse">
-                    <i class="fas fa-suitcase"></i>Zakazite svoj besplatni poziv
+                    <i class="fas fa-suitcase" data-en="Book your free call" data-sr="Zakazite svoj besplatni poziv"></i>
                 </a>
             </div>
         </div>
@@ -290,9 +297,9 @@
     <!-- Live Ticker -->
     <div class="live-ticker">
         <div class="ticker-content">
-            <span>Upravo zakazao: 8 nocenja u Tivtu za 2,400$</span>
-            <span>Novi klijenat:Luksuzna splavarenja Tarom dobili 23 nova potencijalna kupca ove nedelje</span>
-            <span>Ljetnji specijal:Put kruzerom po Budvi 37% vise zakazivanja</span>
+            <span data-en="Just booked: 8 night in Tivat for 2,400$" data-sr="Upravo zakazao: 8 nocenja u Tivtu za 2,400$"></span>
+            <span data-en="New client:Luxury Tara rafting got 23 new potential customers this week" data-sr="Novi klijenat:Luksuzna splavarenja Tarom dobili 23 nova potencijalna kupca ove nedelje"></span>
+            <span data-en="Summer special:Budva water tour had a 37% increase" data-sr="Ljetnji specijal:Put kruzerom po Budvi 37% vise zakazivanja"></span>
         </div>
     </div>
 
@@ -300,19 +307,19 @@
     <section class="offer-details" data-animate="fade">
         <div class="container">
             <div class="offer-content">
-                <h2>Nas Marketinsiki Paket</h2>
+                <h2 data-en="Our Marketing Offer" data-sr="Nas Marketinsiki Paket"></h2>
                 <div class="offer-text" data-animate="slide-up" data-animate-delay="0.2s">
-                    <p>Za 1,500$ mjesecno, nas dokazani marketinski sistem ukljucuje</p>
+                    <p data-en="For 1,500$/month,our proven marketing system includes:" data-sr="Za 1,500$ mjesecno, nas dokazani marketinski sistem ukljucuje"></p>
                     <ul>
-                        <li>Prilagođene Facebook/Instagram reklamne kampanje koje promovišu vaše destinacije</li> 
-                        <li>Google Search & Display oglasi usmereni na aktivne putnike</li> 
-                        <li>YouTube video reklame za vizuelni marketing destinacija</li> 
-                        <li>Mesečno osvežavanje kreativnog sadržaja sa sezonskim putnim temama</li>
-                        <li>Praćenje konverzija rezervacija i izveštaji o ROI (povratu investicije)</li>
-                        <li>Nedeljna optimizacija ponuda, publike i pozicioniranja</li> 
-                        <li>Dedikovani strateg za putnički marketing</li>
+                        <li data-en="Adapted Facebook/Instagram ad campaigns that promote your destinations" data-sr="Prilagođene Facebook/Instagram reklamne kampanje koje promovišu vaše destinacije"></li> 
+                        <li data-en="Google Search & Display ads targeting active customers" data-sr="Google Search & Display oglasi usmereni na aktivne putnike"></li> 
+                        <li data-en="YouTube video ads for visual destination marketing" data-sr="YouTube video reklame za vizuelni marketing destinacija"></li> 
+                        <li data-en="Monthly ad refresh based on the hot destinations" data-sr="Mesečno osvežavanje kreativnog sadržaja sa sezonskim putnim temama"></li>
+                        <li data-en="Tracking booking conversions and report ROI" data-sr="Praćenje konverzija rezervacija i izveštaji o ROI (povratu investicije)"></li>
+                        <li data-en="Weekly offer,audience and positioning optimisation" data-sr="Nedeljna optimizacija ponuda, publike i pozicioniranja"></li> 
+                        <li data-en="Dedicated strategies for travel marketing" data-sr="Dedikovani strateg za putnički marketing"></li>
                     </ul>
-                    <p>Radimo samo sa 2 agencije u jedno vrijeme po lokaciji da bi osigurali uspijeh nasih klijenata. To obicno dovodi do 40-50 novih kupaca i 3,5X od potrosenog reklamnog budzeta u 90 dana</p>
+                    <p data-en="We work with only 2 agencies per region to guarante success for our clients. That usually leads to 40-50 new bookings and 3.5x ROI on adspend" data-sr="Radimo samo sa 2 agencije u jedno vrijeme po lokaciji da bi osigurali uspijeh nasih klijenata. To obicno dovodi do 40-50 novih kupaca i 3,5X od potrosenog reklamnog budzeta u 90 dana"></p>
                 </div>
             </div>
         </div>
@@ -325,7 +332,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>MonteInfluence</h3>
-                    <p>Premium marketing za Turisticke agencije</p>
+                    <p data-en="Premium Marketing for Travel Agencies" data-sr="Premium marketing za Turisticke agencije"></p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -333,19 +340,19 @@
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Services</h3>
+                    <h3 data-en="Services" data-sr="Ponude"></h3>
                     <ul class="footer-links">
-                        <li><a href="#">Facebook Reklame</a></li>
-                        <li><a href="#">Google Reklame</a></li>
-                        <li><a href="#">Email Marketing</a></li>
+                        <li><a href="#" data-en="Facebook Ads" data-sr="Facebook Reklame"></a></li>
+                        <li><a href="#" data-en="Google Ads" data-sr="Google Reklame"></a></li>
+                        <li><a href="#" data-en="Email Marketing" data-sr="Email Marketing"></a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3 data-en="Quick Links" data-sr="Linkovi"></h3>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#services">Usluge</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#services" data-en="Services" data-sr="Usluge"></a></li>
+                        <li><a href="contact.html" data-en="Contact" data-sr="Kontakt"></a></li>
                     </ul>
                 </div>
             </div>
@@ -359,8 +366,8 @@
     <!-- Seasonal Badge -->
     <div class="seasonal-badge">
         <div class="badge-content">
-           <a href="calendly.html"> <span>Vrhunac Turisticke Sezone!</span></a>
-            <small>Mali broj otvorenih mijesta ostalo</small>
+           <a href="calendly.html"> <span data-en="Peak Tourist Season!" data-sr="Vrhunac Turisticke Sezone!"></span></a>
+            <small data-en="Small number of spots available" data-sr="Mali broj otvorenih mijesta ostalo"></small>
         </div>
     </div>
     

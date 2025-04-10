@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zakazite konsultaciju | MonteInfluence</title>
+    <title data-en="Book a call" data-sr="Zakazite poziv"></title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="calendly.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,11 +28,18 @@
             <nav>
                 <a href="index.html" class="logo">Monte<span>Influence</span></a>
                 <ul class="nav-links">
-                    <li><a href="contact.html" class="contact-nav-btn">Kontakt</a></li>
+                    <li><a href="contact.html" class="contact-nav-btn" data-en="Contact" data-sr="Kontakt"></a></li>
                 </ul>
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>
+                <div class="language-dropdown">
+                    <button class="language-btn">EN &#9660;<i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="sr">Srpski</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -40,11 +47,11 @@
     <main class="calendly-hero">
         <div class="calendly-container">
             <div class="calendly-header">
-                <h1>Zakazite svoj poziv</h1>
-                <p>Izaberite vrijeme za poziv</p>
+                <h1 data-en="Book your call" data-sr="Zakazite svoj poziv"></h1>
+                <p data-en="Chose your prefered time" data-sr="Izaberite vrijeme za poziv"> </p>
                 <div class="calendly-cta">
                     <i class="fas fa-calendar-check"></i>
-                    <span>Poziv od 30 minuta</span>
+                    <span data-en="30 minute call" data-sr="Poziv od 30 minuta"></span>
                     <i class="fas fa-video"></i>
                     <span>Google Meet</span>
                 </div>
@@ -63,19 +70,41 @@
     </main>
 
     <!-- Footer (matches your main site) -->
-    <footer class="footer">
-        <div class="footer-content">
-            
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MonteInfluence</h3>
+                    <p data-en="Premium Marketing for Travel Agencies" data-sr="Premium marketing za Turisticke agencije"></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Services" data-sr="Ponude"></h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-en="Facebook Ads" data-sr="Facebook Reklame"></a></li>
+                        <li><a href="#" data-en="Google Ads" data-sr="Google Reklame"></a></li>
+                        <li><a href="#" data-en="Email Marketing" data-sr="Email Marketing"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-en="Quick Links" data-sr="Linkovi"></h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="#services" data-en="Services" data-sr="Usluge"></a></li>
+                        <li><a href="contact.html" data-en="Contact" data-sr="Kontakt"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span>MonteInfluence All Rights Reserved.</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2023 MonteInfluence. All rights reserved.</p>
-        </div>
     </footer>
+
 
     <!-- Calendly Script -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -105,5 +134,6 @@
         });
    
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
