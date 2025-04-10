@@ -1735,6 +1735,7 @@ footer::before {
   .calculator-keys {
     grid-template-columns: repeat(4, 1fr);
   }
+  
 }
 /* ===== Language Switcher Redesign ===== */
 /* Works with your existing HTML structure */
@@ -1814,32 +1815,17 @@ footer::before {
 .dropdown-content a:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-
-/* Mobile Adaptation */
 @media (max-width: 768px) {
-  .language-dropdown {
-    width: 100%;
-    margin: 10px 0 0;
+  .language-btn {display: none;
+      
   }
-  
-  .dropdown-content {
-    position: static;
-    margin-top: 5px;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    background: rgba(30, 30, 30, 0.9);
+  .language-btn:hover{
     display: none;
   }
-  
-  .language-dropdown:hover .dropdown-content,
-  .language-dropdown:focus-within .dropdown-content {
-    display: block;
+  .language-dropdown {
+    display: none;
   }
-  
-  .language-btn {
-    width: 100%;
-    justify-content: center;
-    border-radius: 8px;
+  .language-dropdown:hover {
+    display: none;
   }
 }
