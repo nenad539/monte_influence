@@ -1682,7 +1682,7 @@ footer::before {
   body {
     width: 100%;
     overflow-x: hidden; /* Prevents horizontal scroll */
-    position: fixed; /* Stops auto-scrolling */
+    
   }
 
   /* Navbar Fix */
