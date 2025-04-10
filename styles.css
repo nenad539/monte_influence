@@ -1677,40 +1677,31 @@ footer::before {
       padding: 2rem;
   }
 }
-/* Mobile First Approach */
+/* Mobile Viewport Fix */
 @media (max-width: 768px) {
-  /* Header/Navbar */
-  body{
+  body {
     width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    position: fixed; /* Stops auto-scrolling */
   }
+
+  /* Navbar Fix */
   .header {
-    padding: 1rem 2%;
-  }
-  
-  .logo img {
-    width: 120px; /* Smaller logo */
-  }
-
-  #check:checked ~ .icons #menu-icon {
-    display: none;
-  }
-
-  .icons {
-    display: block;
+    width: 100%;
+    padding: 1rem 5%;
+    box-sizing: border-box;
   }
 
   .navbar {
-    position: absolute;
-    top: 100%;
-    left: 100%;
     width: 100%;
-    height: 100vh;
-    background: var(--bg-cologir);
-    transition: .3s ease;
+    left: -100%;
+    background: var(--bg-color);
+    z-index: 999;
   }
 
   #check:checked ~ .navbar {
     left: 0;
+    width: 100%;
   }
 
   .navbar a {
@@ -1718,48 +1709,24 @@ footer::before {
     margin: 1.5rem 0;
     text-align: center;
   }
-
-  /* Hero Section */
-  .home {
-    padding: 10rem 4% 2rem;
-    text-align: center;
+  .home-content h1, .text-animate h3 {
+    animation: none !important; 
   }
-
-  .home-content h1 {
-    font-size: 2.5rem;
+  
+  .btn-box .btn {
+    transition: none !important;
   }
-
-  /* About Section */
-  .about {
-    flex-direction: column-reverse;
+  .calculator {
+    transform: none !important;
+    width: 95% !important;
+    margin: 0 auto !important;
   }
-
-  .about-content {
-    padding-top: 2rem;
+  
+  .calculator-screen {
+    width: 100% !important;
   }
-
-  /* Services */
-  .services-container {
-    grid-template-columns: 1fr;
+  
+  .calculator-keys {
+    grid-template-columns: repeat(4, 1fr);
   }
-
-  /* Contact Form */
-  .contact form .input-box {
-    flex-direction: column;
-  }
-
-  .contact form .input-box input {
-    width: 100%;
-  }
-  /* Prevents layout shift */
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-/* Minimum touch target size */
-a, button, input[type="submit"] {
-  min-width: 44px;
-  min-height: 44px;
-}
 }
