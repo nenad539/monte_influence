@@ -1684,6 +1684,12 @@ footer::before {
     overflow-x: hidden; /* Prevents horizontal scroll */
     
   }
+  /* Add this for scroll restoration */
+  html, body {
+    overflow-x: hidden;
+    height: auto;
+    position: relative; /* Allows natural scrolling */
+  }
 
   /* Navbar Fix */
   .header {
