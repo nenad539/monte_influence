@@ -155,12 +155,7 @@ function initCalculator() {
         budgetSlider.dispatchEvent(new Event('input'));
     }
 }
-// Add to scripts.js
-let lastScroll = 0;
-window.addEventListener('scroll', function() {
-  const currentScroll = window.pageYOffset;
-  
-  
+
 // ===== SCROLL ANIMATIONS =====
 function initAnimations() {
     // Intersection Observer for scroll animations
