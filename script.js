@@ -160,12 +160,7 @@ let lastScroll = 0;
 window.addEventListener('scroll', function() {
   const currentScroll = window.pageYOffset;
   
-  // Prevent scroll jumps
-  if (Math.abs(currentScroll - lastScroll) > 50) {
-    window.scrollTo(0, lastScroll);
-  }
-  lastScroll = currentScroll;
-});
+  
 // ===== SCROLL ANIMATIONS =====
 function initAnimations() {
     // Intersection Observer for scroll animations
