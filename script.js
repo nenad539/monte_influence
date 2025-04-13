@@ -291,3 +291,11 @@ document.addEventListener('DOMContentLoaded', () => {
   updateLanguageDisplay();
 });
 
+document.getElementById('language-select').addEventListener('change', function() {
+  const selectedLanguage = this.value;
+  // Implement language switch logic here
+});
+
+document.getElementById('hamburger-btn').addEventListener('click', function() {
+  // Toggle navigation menu visibility
+});
