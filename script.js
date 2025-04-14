@@ -113,6 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     updateCopyrightYear();
     initHeatmap();
+    initFadeInAnimation();
+    animateButterfly();
 });
 
 // ===== ROI CALCULATOR =====
@@ -248,7 +250,27 @@ document.querySelectorAll('.btn-luxury').forEach(button => {
         button.style.setProperty('--mouse-y', `${y}px`);
     });
 });
-// DELETE ALL existing language code and REPLACE with this:
+
+// ===== FADE-IN ANIMATION =====
+function initFadeInAnimation() {
+  const fadeInElements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); // Stop observing once the animation is triggered
+      }
+    });
+  }, { threshold: 0.1 });
+
+  fadeInElements.forEach(el => observer.observe(el));
+}
+
+// Initialize fade-in animation
+document.addEventListener('DOMContentLoaded', () => {
+  initFadeInAnimation();
+});
 
 // Track current language
 let currentLang = localStorage.getItem('lang') || 'en';
@@ -298,4 +320,37 @@ document.getElementById('language-select').addEventListener('change', function()
 
 document.getElementById('hamburger-btn').addEventListener('click', function() {
   // Toggle navigation menu visibility
+});
+
+function animateButterfly() {
+  const butterfly = document.querySelector('.butterfly');
+  if (!butterfly) return;
+
+  let x = -100; // Start off-screen
+  let y = Math.random() * window.innerHeight; // Random vertical position
+  let direction = 1; // 1 for right, -1 for left
+
+  function moveButterfly() {
+    x += 2 * direction; // Move horizontally
+    y += Math.sin(x / 50) * 2; // Add a wave-like motion
+
+    // Update butterfly position
+    butterfly.style.transform = `translate(${x}px, ${y}px)`;
+
+    // Reverse direction if it goes off-screen
+    if (x > window.innerWidth + 100 || x < -100) {
+      direction *= -1;
+      butterfly.style.transform = `scaleX(${direction})`; // Flip the butterfly
+      y = Math.random() * window.innerHeight; // Reset vertical position
+    }
+
+    requestAnimationFrame(moveButterfly);
+  }
+
+  moveButterfly();
+}
+
+// Initialize butterfly animation
+document.addEventListener('DOMContentLoaded', () => {
+  animateButterfly();
 });

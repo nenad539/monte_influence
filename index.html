@@ -36,25 +36,26 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">Monte<span>Influence</span></a>
+                <div class="logo-menu">
+                    <a href="index.html" class="logo">Monte<span>Influence</span></a>
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#services" data-en="Services" data-sr="Usluge">Usluge</a></li>
                     <li><a href="#why-choose-us" data-en="Why us" data-sr="Zasto mi">Zasto mi?</a></li>
                     <li><a href="contact.html" class="contact-nav-btn" data-en="Contact" data-sr="Kontakt">Kontakt</a></li>
-                    
                 </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
                 <!-- Language Dropdown -->
-        <div class="language-dropdown" style="--i:4;">
-            <button class="language-btn">EN <i class='bx bx-chevron-down'></i></button>
-            <div class="dropdown-content">
-                <a href="#" data-lang="en">English</a>
-                <a href="#" data-lang="sr">Srpski</a>
-            </div>
-        </div>
+                <div class="language-dropdown" style="--i:4;">
+                    <button class="language-btn">EN <i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="sr">Srpski</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -84,9 +85,9 @@
     <div class="container">
         <h2 data-animate data-en="Hot locations" data-sr="Istaknute lokacije"></h2>
        
-        <div class="destinations-grid">
+        <div class="destinations-grid" >
             <!-- Destination 1 -->
-            <div class="destination-card" data-animate="slide-up" data-animate-delay="0.3s">
+            <div class="destination-card" data-animate="slide-up" data-animate-delay="0.3s" class="fade-in">
                 <div class="destination-image">
                     <img src="assets/durmitor.jpeg" alt="Bali Campaign">
                     <div class="destination-badge">+480% ROAS</div>
@@ -108,7 +109,7 @@
             </div>
             
             <!-- Destination 2 -->
-            <div class="destination-card" data-animate="slide-up" data-animate-delay="0.4s">
+            <div class="destination-card" data-animate="slide-up" data-animate-delay="0.4s" class="fade-in">
                 <div class="destination-image">
                     <img src="assets/tivat.jpeg" alt="Safari Campaign">
                     <div class="destination-badge" data-en="72 Booked Tours" data-sr="72 Zakazana Putovanja"></div>
@@ -130,7 +131,7 @@
             </div>
             
             <!-- Destination 3 -->
-            <div class="destination-card" data-animate="slide-up" data-animate-delay="0.5s">
+            <div class="destination-card" data-animate="slide-up" data-animate-delay="0.5s" class="fade-in">
                 <div class="destination-image">
                     <img src="assets/europe-results.jpg" alt="Europe Campaign">
                     <div class="destination-badge" data-en="3.5X Conversion Rate" data-sr="3.5X Konverzija"></div>
@@ -371,6 +372,7 @@
             <small data-en="Small number of spots available" data-sr="Mali broj otvorenih mijesta ostalo"></small>
         </div>
     </div>
+   
     
     <script src="script.js"></script>
 </body>
