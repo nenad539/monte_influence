@@ -354,3 +354,4 @@ function animateButterfly() {
 document.addEventListener('DOMContentLoaded', () => {
   animateButterfly();
 });
+
