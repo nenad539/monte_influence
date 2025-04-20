@@ -1170,7 +1170,7 @@ body::after {
 .seasonal-badge {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  left: 2rem;
   background: linear-gradient(135deg, #ff2d75, #ff8e53);
   padding: 1rem 1.5rem;
   border-radius: 8px;

@@ -216,20 +216,7 @@ function initMobileMenu() {
     }
 }
 
-// ===== HEATMAP INTERACTIVITY =====
-function initHeatmap() {
-    document.querySelectorAll('.heatmap-spot').forEach(spot => {
-        spot.addEventListener('mouseenter', () => {
-            const tooltip = spot.querySelector('.heatmap-tooltip');
-            if (tooltip) tooltip.style.opacity = '1';
-        });
-        
-        spot.addEventListener('mouseleave', () => {
-            const tooltip = spot.querySelector('.heatmap-tooltip');
-            if (tooltip) tooltip.style.opacity = '0';
-        });
-    });
-}
+
 
 // ===== COPYRIGHT YEAR =====
 function updateCopyrightYear() {
